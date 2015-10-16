@@ -38,6 +38,13 @@ You can use [twitter-tokens][tokens], to simplify getting tokens.
 [how-to-get]: https://iamstarkov.com/get-twitter-tokens/
 [tokens]: https://www.npmjs.com/package/twitter-tokens
 
+#### username
+
+*Required*  
+Type: `String`
+
+Twitter username.
+
 #### cb(err, info)
 
 *Required*  
