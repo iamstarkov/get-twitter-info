@@ -1,0 +1,56 @@
+# get-twitter-info
+
+[![NPM version][npm-image]][npm-url]
+[![Build Status][travis-image]][travis-url]
+[![Coveralls Status][coveralls-image]][coveralls-url]
+[![Dependency Status][depstat-image]][depstat-url]
+
+> get info about target username
+
+## Install
+
+    npm install --save get-twitter-info
+
+## Usage
+
+```js
+import getTwitterInfo from 'get-twitter-info';
+
+getTwitterInfo('unicorns'); // unicorns
+```
+
+## API
+
+### getTwitterInfo(input, [options])
+
+#### input
+
+*Required*  
+Type: `String`
+
+Lorem ipsum.
+
+#### options
+
+##### foo
+
+Type: `Boolean`  
+Default: `false`
+
+Lorem ipsum.
+
+## License
+
+MIT © [Vladimir Starkov](https://iamstarkov.com)
+
+[npm-url]: https://npmjs.org/package/get-twitter-info
+[npm-image]: https://img.shields.io/npm/v/get-twitter-info.svg?style=flat-square
+
+[travis-url]: https://travis-ci.org/iamstarkov/get-twitter-info
+[travis-image]: https://img.shields.io/travis/iamstarkov/get-twitter-info.svg?style=flat-square
+
+[coveralls-url]: https://coveralls.io/r/iamstarkov/get-twitter-info
+[coveralls-image]: https://img.shields.io/coveralls/iamstarkov/get-twitter-info.svg?style=flat-square
+
+[depstat-url]: https://david-dm.org/iamstarkov/get-twitter-info
+[depstat-image]: https://david-dm.org/iamstarkov/get-twitter-info.svg?style=flat-square

@@ -1,0 +1,44 @@
+{
+  "name": "get-twitter-info",
+  "version": "0.0.0",
+  "description": "get info about target username",
+  "main": "index.es5.js",
+  "scripts": {
+    "coverage": "isparta cover _mocha index.js -- --require babel/register",
+    "precoveralls": "npm run coverage",
+    "coveralls": "coveralls < coverage/lcov.info",
+    "test": "mocha --require babel/register",
+    "tdd": "npm test -- --watch",
+    "transpile": "babel index.js --out-file index.es5.js",
+    "prepublish": "npm run transpile",
+    "clean": "rimraf index.es5.js",
+    "push": "git push --follow-tags",
+    "postpublish": "npm-run-all clean push"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamstarkov/get-twitter-info.git"
+  },
+  "keywords": [
+    "twitter"
+  ],
+  "author": "Vladimir Starkov <vladimir.starkov@nordnet.se> (https://iamstarkov.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iamstarkov/get-twitter-info/issues"
+  },
+  "homepage": "https://github.com/iamstarkov/get-twitter-info#readme",
+  "devDependencies": {
+    "assert": "^1.3.0",
+    "babel": "*",
+    "coveralls": "*",
+    "isparta": "*",
+    "mocha": "*",
+    "npm-run-all": "*",
+    "rimraf": "*"
+  },
+  "dependencies": {
+    "twit": "^2.1.0",
+    "twitter-tokens": "^1.0.2"
+  }
+}
