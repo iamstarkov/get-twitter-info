@@ -17,27 +17,35 @@
 import getTwitterInfo from 'get-twitter-info';
 
 getTwitterInfo('unicorns'); // unicorns
+
+getTwitterInfo(tokens, 'jsunderhood', (err, info) => {
+  if (err) throw err;
+  console.log(info);
+});
 ```
 
 ## API
 
-### getTwitterInfo(input, [options])
+### getTweets(tokens, username, cb)
 
-#### input
+#### tokens
 
 *Required*  
-Type: `String`
+Type: `Object`
 
-Lorem ipsum.
+Valid [Twitter developer credentials (tokens)][how-to-get]
+in the form of a set of consumer and access tokens/keys.
+You can use [twitter-tokens][tokens], to simplify getting tokens.
 
-#### options
+[how-to-get]: https://iamstarkov.com/get-twitter-tokens/
+[tokens]: https://www.npmjs.com/package/twitter-tokens
 
-##### foo
+#### cb(err, info)
 
-Type: `Boolean`  
-Default: `false`
+*Required*  
+Type: `Function`
 
-Lorem ipsum.
+Callback for you.
 
 ## License
 
