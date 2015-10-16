@@ -16,8 +16,6 @@
 ```js
 import getTwitterInfo from 'get-twitter-info';
 
-getTwitterInfo('unicorns'); // unicorns
-
 getTwitterInfo(tokens, 'jsunderhood', (err, info) => {
   if (err) throw err;
   console.log(info);
