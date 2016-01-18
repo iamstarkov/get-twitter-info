@@ -24,7 +24,7 @@ getTwitterInfo(tokens, 'jsunderhood', (err, info) => {
 
 ## API
 
-### getTweets(tokens, username, cb)
+### getTwitterInfo(tokens, username, cb)
 
 #### tokens
 
