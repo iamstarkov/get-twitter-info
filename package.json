@@ -41,6 +41,7 @@
     "twitter-tokens": "^1.0.2"
   },
   "dependencies": {
+    "pinkie-promise": "^2.0.0",
     "twit": "^2.1.0"
   }
 }
