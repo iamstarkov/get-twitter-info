@@ -1,6 +1,6 @@
 {
   "name": "get-twitter-info",
-  "version": "1.0.5",
+  "version": "2.0.0",
   "description": "get info about target username",
   "main": "index.es5.js",
   "scripts": {
