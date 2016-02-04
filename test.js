@@ -3,7 +3,7 @@ import getTwitterInfo from './index';
 import tokens from 'twitter-tokens';
 
 it('should getTwitterInfo', done => {
-  getTwitterInfo(tokens, 'jsunderhood', (err, info) => {
+  getTwitterInfo(tokens, 'jsunderhood').then(info => {
     equal(info.screen_name, 'jsunderhood');
     done();
   });

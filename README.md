@@ -16,15 +16,16 @@
 ```js
 import getTwitterInfo from 'get-twitter-info';
 
-getTwitterInfo(tokens, 'jsunderhood', (err, info) => {
-  if (err) throw err;
+getTwitterInfo(tokens, 'jsunderhood').then(info => {
   console.log(info);
 });
 ```
 
 ## API
 
-### getTwitterInfo(tokens, username, cb)
+### getTwitterInfo(tokens, username)
+
+Return a promise that resolves to user info.
 
 #### tokens
 
@@ -44,13 +45,6 @@ You can use [twitter-tokens][tokens], to simplify getting tokens.
 Type: `String`
 
 Twitter username.
-
-#### cb(err, info)
-
-*Required*  
-Type: `Function`
-
-Callback for you.
 
 ## License
 
