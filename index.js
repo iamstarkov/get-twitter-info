@@ -3,5 +3,5 @@ import Twitter from 'twit';
 export default function getTwitterInfo(tokens, username) {
   return new Twitter(tokens)
     .get('users/show', { screen_name: username })
-    .then(function(result) { return result.data; });
-};
+    .then(({ data }) => data);
+}
