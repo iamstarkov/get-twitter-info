@@ -1,5 +1,7 @@
 # get-twitter-info
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/iamstarkov/get-twitter-info.svg)](https://greenkeeper.io/)
+
 [![NPM version][npm-image]][npm-url]
 [![Build Status][travis-image]][travis-url]
 [![Coveralls Status][coveralls-image]][coveralls-url]
